@@ -26,7 +26,7 @@ jobs:
     # Step 3: Install Shinylive
     - name: Install Shinylive
       run: |
-        Rscript -e 'install.packages("shinylive", repos = "https://cloud.r-project.org")'
+        Rscript -e 'install.packages("shinylive")'
 
     # Step 4: Export Shiny app as a static website
     - name: Export Shiny app
