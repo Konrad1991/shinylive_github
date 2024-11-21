@@ -27,9 +27,9 @@ jobs:
           cran::shinylive@0.2.0 ## Pin version to ensure consistency
 
     # Step 3: Install Shinylive
-    - name: Install Shinylive
-      run: |
-        Rscript -e 'install.packages("shinylive")'
+    # - name: Install Shinylive
+    #   run: |
+    #     Rscript -e 'install.packages("shinylive")'
 
     # Step 4: Export Shiny app as a static website
     - name: Export Shiny app
