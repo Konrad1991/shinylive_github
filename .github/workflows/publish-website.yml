@@ -33,11 +33,34 @@ jobs:
     #   run: |
     #     Rscript -e 'install.packages("shinylive", repos = "https://cloud.r-project.org")'
 
-    - name: "Setup R dependencies for Quarto's knitr engine"
+    - name: "Setup R dependencies"
       uses: r-lib/actions/setup-r-dependencies@v2
       with:
         packages:
           cran::shinylive@0.2.0
+          any::shiny
+          any::DT
+          any::bslib
+          any::broom
+          any::ggplot2
+          any::base64enc
+          any::shinyjs
+          any::mgcv
+          any::RColorBrewer
+          any::tidyr
+          any::purrr
+          any::agricolae
+          any::drc
+          any::cowplot
+          any::MASS
+          any::Matrix
+          any::equatiomatic
+          any::openxlsx
+          any::car
+          any::COMELN
+          any::httr
+          any::jose
+          any::openssl
 
     # Step 5: Export Shiny app as a static website
     - name: Export Shiny app
